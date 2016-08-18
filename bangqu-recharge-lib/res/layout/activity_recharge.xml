@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <com.bangqu.recharge.widget.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/weak_e"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llChongzhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="帳號充值"
+                    android:textColor="@color/color_blue"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/color_white"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="帳號:"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/txt_14" />
+
+                    <TextView
+                        android:id="@+id/tvUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="@dimen/txt_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="餘額:"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/txt_14" />
+
+                    <TextView
+                        android:id="@+id/tvBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="@dimen/txt_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="充值方式:"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/txt_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvXinYongKa"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="信用卡"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/txt_14" />
+
+                        <TextView
+                            android:id="@+id/tvDianxin"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="電信帳單"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/txt_14" />
+
+                        <TextView
+                            android:id="@+id/tvShouji"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="手機語音"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/txt_14" />
+
+                        <TextView
+                            android:id="@+id/tvjianxun"
+                             android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="簡訊加值"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/txt_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvdianhua"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="電話加值"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/txt_14" />
+
+                        <TextView
+                            android:id="@+id/tvAtm"
+                             android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="ATM付款 "
+                            android:textColor="#333333"
+                            android:textSize="@dimen/txt_14" />
+
+                        <TextView
+                            android:id="@+id/tvBianli"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="便利超商"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/txt_14" />
+
+                        <TextView
+                            android:id="@+id/tvdianzihuobi"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="電子貨幣"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/txt_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvMyCard"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="MyCard"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/txt_14" />
+
+                        <TextView
+                            android:id="@+id/tvdalu"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="  "
+                            android:textColor="#333333"
+                            android:textSize="@dimen/txt_14" />
+
+                        <TextView
+                            android:id="@+id/tvyuenan"
+                             android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="#333333"
+                            android:textSize="@dimen/txt_14" />
+
+                        <TextView
+                            android:id="@+id/tvyuyinbianli"
+                           android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="#333333"
+                            android:textSize="@dimen/txt_14" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPayType"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvPayType"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="left"
+                        android:text="信用卡:"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/txt_14" />
+
+                    <Spinner
+                        android:id="@+id/svType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:visibility="visible">
+
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/color_white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="left"
+                            android:text="金額:"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/txt_14" />
+
+                        <Spinner
+                            android:id="@+id/svMoney"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"></Spinner>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btCommit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/color_white"
+                        android:text="立即充值"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/txt_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#F4F4F4"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="帳號登入"
+                    android:textColor="@color/color_blue"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_input_register"
+                    android:hint="帳號"
+                    android:paddingLeft="10dp"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_input_register"
+                    android:hint="密碼"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/login_n"
+                    android:text="登 入"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvAgreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="註冊帳號表示你已經同意使用者協定"
+                    android:textColor="#558BE1"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvRegist"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="新用戶註冊"
+                        android:textColor="#558BE1"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#F4F4F4"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="帳號註冊"
+                        android:textColor="@color/color_blue"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_input_register"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tvUserName"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="帳號"
+                            android:textColor="#333333"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#B0B0B0" />
+
+                        <EditText
+                            android:id="@+id/etUserNameR"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="請輸入帳號"
+                            android:paddingLeft="15dp"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textColorHint="@color/color_grey"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_input_register">
+
+                        <TextView
+                            android:id="@+id/tvPassword"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="密碼"
+                            android:textColor="#333333"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#B0B0B0" />
+
+                        <EditText
+                            android:id="@+id/etPasswordR"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="請輸入密碼"
+                            android:inputType="textPassword"
+                            android:paddingLeft="15dp"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textColorHint="@color/color_grey"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_input_register"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="郵箱"
+                            android:textColor="#333333"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#B0B0B0" />
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="請輸入郵箱"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="15dp"
+                            android:singleLine="true"
+                            android:textColor="#333333"
+                            android:textColorHint="@color/color_grey"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnRegist"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/login_n"
+                    android:text="註冊"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvAgreenR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="註冊帳號表示你已經同意使用者協定"
+                    android:textColor="@color/color_blue"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="已有帳號，直接登入"
+                        android:textColor="@color/color_blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.bangqu.recharge.widget.BounceScrollView>
+
+
+</RelativeLayout>
