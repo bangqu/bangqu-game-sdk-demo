@@ -221,3 +221,5 @@ bangqu-game-sdk-demo
     }
     
 Demo：bangqu-game-sdk-demo
+
+展示apk：http://7xocov.com2.z0.glb.qiniucdn.com/bangqu-game-sdk.apk
