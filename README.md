@@ -6,6 +6,14 @@ bangqu-game-sdk-demo
 
 本SDK集成了台湾2大支付平台Pepay与MyCard
 
+开发环境：
+
+工具：eclipse 
+Android sdk 2.3以上
+下载demo（bangqu-game-sdk），lib（bangqu-recharge-lib，pepay-lib）；
+将bangqu-game-sdk，bangqu-recharge-lib，pepay-lib eclipse导入
+
+
 配置 AndroidManifest.xml：
 
     <uses-permission android:name="android.permission.INTERNET" />
