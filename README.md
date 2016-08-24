@@ -9,7 +9,7 @@ bangqu-game-sdk-demo
 开发环境：
 
 工具：eclipse 
-Android sdk 2.3以上
+ Android sdk 2.3以上
 下载demo（bangqu-game-sdk），lib（bangqu-recharge-lib，pepay-lib）；
 将bangqu-game-sdk，bangqu-recharge-lib，pepay-lib eclipse导入
 
