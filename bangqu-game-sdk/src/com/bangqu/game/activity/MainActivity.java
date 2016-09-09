@@ -30,7 +30,7 @@ public class MainActivity extends Activity implements OnClickListener, SDKInterf
     /*
      * MyCard需要参数
      */
-    private String gameid = "209";
+    private String gameid = "280";
     private int PAY = 1001;
     /*
      * pepay需要参数
@@ -94,9 +94,13 @@ public class MainActivity extends Activity implements OnClickListener, SDKInterf
 //                Intent intent4 = new Intent(this, SDKAgentActivity.class);
 //                intent4.putExtra("type", 4 + "");
 //                startActivity(intent4);
+            	
                 Intent intent3 = new Intent(this, RechargeActivity.class);
-                intent3.putExtra("gameid", "209");
+                intent3.putExtra("gameid", gameid);
                 intent3.putExtra("type", "3");
+                intent3.putExtra("userUid", "1201220100");//用户玩家ID
+                intent3.putExtra("ServerName", "S1");//游戏区
+                intent3.putExtra("goodsId", "1");//
                 intent3.putExtra("ProductName", "测试名称"); 
                 startActivity(intent3);
                 break;
